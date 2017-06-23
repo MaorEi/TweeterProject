@@ -1,0 +1,56 @@
+img.image-logo{
+	height: 25px;
+	float: left;
+	padding-right: 5px;
+}
+.navbar-inverse{
+	background-color: blue !important;
+}
+.navbar-inverse a{
+	color: white !important;
+}
+
+.navbar-inverse a:hover{
+	color: rgb(225,225,225) !important;
+}
+.tweet-avatar{
+	float: left;
+	margin-right: 15px;
+	padding-left: 10px;
+}
+
+.tweet-username{
+	font-weight: bold;
+}
+
+.row{
+	margin-top: 20 px;
+}
+
+.thumbnail .user-cell{
+	height: 170px;
+}
+
+img.useravatar{
+	height: 48px;
+}
+
+.thumbnail>img.useravatar{
+	height: 48px;	
+}
+
+.user-cell-name{
+	margin-top: 20px;
+}
+
+.hide-me {
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(.75);
+}
+
+.followees-list{
+	min-width: 15%;
+	border:5px solid rgb(230,230,230);
+	text-align: center;
+}
