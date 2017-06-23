@@ -1,34 +1,168 @@
 <!DOCTYPE html>
 <html>
-<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
-
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-  </head>
+<head></head>
 <body>
-	
-	<nav class="navbar">
-		<div class="navbar-header"><a class = "navbar-brand" href="#">OfekTwitter</a></div>
-		<ul class="nav navbar-nav">
-			<li><a href="#" class="headBar">Users</a></li>
-			<li><a href="#" class="headBar">Sign up</a></li>
-			<li><a href="#" class="headBar">Sign in</a></li>
-		</ul>
-	</nav>
-	<form class="container" action="" id="userTweet">
-		<input type="text">
-		<input type="submit">
-	</form>
-	
+    <doctype html>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>OfekTwitter</title>
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/main.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <header>     
+            <div class="navbar navbar-default navbar-inverse navbar-fixed-top" role = "navigation"> 
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class = "navbar-brand" href="index.html">
+                            <img href = "index.html" class="image-logo" src="images\OfekUnit.png">
+                            OfekTwitter
+                        </a>
+                    </div>
+                    <nav>
+                        <ul class="nav navbar-nav navbar-right">
+                           <li>
+                               <a href="users.html">Users</a>
+                           </li>
+                           <li>
+                               <a href="sign_up.html">Sign up</a>
+                           </li>
+                           <li>
+                               <a href="sign_">Sign in</a>
+                           </li>
+                       </ul>
+                   </nav>
+               </div>
+           </div>
+       </header>
+       <br><br><br>
+       <div class="container ot-body">
+           <div>
+               <textarea id = "tweet-content" placeholder="tweet text..." rows="3" class="form-control"></textarea>
+               <button onclick = "publishTweet()" type="button" class="btn btn-primary pull-right">Publish</button>
+           </div>
+       </div>
+       <section id="tweets-section" class="container">
+        <div class="row">
+            <div class="tweet-avatar">
+                <img src="images/useravatar.jpg" class="useravatar">
+            </div>
+            <div class="tweet-username">
+                James Bond says:
+            </div>
+            <div class="tweet-text">
+                Blabla bla...
+            </div>
+        </div>
+        <div class="row">
+            <div class="tweet-avatar">
+                <img src="images/useravatar.jpg" class="useravatar">
+            </div>
+            <div class="tweet-username">
+                James Bond says:
+            </div>
+            <div class="tweet-text">
+                Bond, James Bond
+            </div>
+        </div>
+        <div class="row">
+            <div class="tweet-avatar">
+                <img src="images/useravatar.jpg" class="useravatar">
+            </div>
+            <div class="tweet-username">
+                Albert Einstein says:
+            </div>
+            <div class="tweet-text">
+                E = mc^2
+            </div>
+        </div>
+        <div class="row">
+            <div class="tweet-avatar">
+                <img src="images/useravatar.jpg" class="useravatar">
+            </div>
+            <div class="tweet-username">
+                Bill Gates says:
+            </div>
+            <div class="tweet-text">
+                I think 64 bytes should be enough for everyone
+            </div>
+        </div>
+        <div class="row">
+            <div class="tweet-avatar">
+                <img src="images/useravatar.jpg" class="useravatar">
+            </div>
+            <div class="tweet-username">
+                Frodo says:
+            </div>
+            <div class="tweet-text">
+                My Precious
+            </div>
+        </div>
+    </section>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+    <script>
+        var listOfTweets = 
+        [
+        {'username':'Bobo','text':'hello followers!'},
+        {'username':'Elvis','text':'this exercise is really easy!'},
+        {'username':'Mimi','text':'I want to go to sleep'}
+        ];
+
+        console.log(listOfTweets);
+
+        function loadListOfTweets() {
+            var tweetSection = document.getElementById("tweets-section");
+            var output="";
+            for (var i = 0; i < listOfTweets.length; i++) {
+                output+=tweetRawBuilder(listOfTweets[i].username,listOfTweets[i].text,
+                    "images/useravatar.jpg");
+            }
+            tweetSection.insertAdjacentHTML ('afterbegin',output);
+        }
+
+        function tweetRawBuilder(username,text,image) {
+            var divRow = document.createElement("DIV");        
+            divRow.setAttribute("class","row");
+            var divTweeterAvatar = document.createElement("DIV");
+            divTweeterAvatar.setAttribute("class","tweet-avatar");
+            divRow.appendChild(divTweeterAvatar);
+            var imgUserAvatar = document.createElement("IMG");
+            imgUserAvatar.setAttribute("src",image);
+            imgUserAvatar.setAttribute("class","useravatar");
+            divTweeterAvatar.appendChild(imgUserAvatar);
+            var divTweetUsername = document.createElement("DIV");
+            divTweetUsername.setAttribute("class","tweet-username");
+            divRow.appendChild(divTweetUsername);
+            var tweetUsernameTextNode = document.createTextNode(username + " says:");
+            divTweetUsername.appendChild(tweetUsernameTextNode);
+            var divTweetText=document.createElement("DIV");
+            divTweetText.setAttribute("class","tweet-text");
+            var tweetTextTextNode = document.createTextNode(text);
+            divTweetText.appendChild(tweetTextTextNode);
+            divRow.appendChild(divTweetText);
+            console.log(divRow);
+            return divRow;
+            /*var t = document.createTextNode("CLICK ME");
+            btn.appendChild(t);                                // Append the text to <button>
+            document.body.appendChild(btn);                    // Append <button> to <body>
+            return output;*/
+        }
+
+function publishTweet() {
+    var tweetSection = document.getElementById("tweets-section");
+    var tweetContent = document.getElementById("tweet-content");
+    listOfTweets.push({'username':'Maor Eitan','text':tweetContent.value});
+    console.log(listOfTweets);
+
+    tweetSection.insertBefore(tweetRawBuilder("Maor Eitan",tweetContent.value,"images/useravatar.jpg"),tweetSection.firstChild);
+}
+
+</script>
+
+</doctype>
 </body>
 </html> 
