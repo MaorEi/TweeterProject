@@ -234,10 +234,10 @@ th {
   .navbar {
     display: none; }
 
-  .btn > .caret, .follow-state > .caret, .ufollow-state > .caret,
+  .btn > .caret, .follow-state > .caret, .unfollow-state > .caret,
   .dropup > .btn > .caret,
   .dropup > .follow-state > .caret,
-  .dropup > .ufollow-state > .caret {
+  .dropup > .unfollow-state > .caret {
     border-top-color: #000 !important; }
 
   .label {
@@ -2493,54 +2493,54 @@ input[type="search"] {
   .input-group-sm > input[type="date"].input-group-addon,
   .input-group-sm > .input-group-btn > input[type="date"].btn,
   .input-group-sm > .input-group-btn > input[type="date"].follow-state,
-  .input-group-sm > .input-group-btn > input[type="date"].ufollow-state, .input-group-sm input[type="date"],
+  .input-group-sm > .input-group-btn > input[type="date"].unfollow-state, .input-group-sm input[type="date"],
   input[type="time"].input-sm,
   .input-group-sm > input[type="time"].form-control,
   .input-group-sm > input[type="time"].input-group-addon,
   .input-group-sm > .input-group-btn > input[type="time"].btn,
   .input-group-sm > .input-group-btn > input[type="time"].follow-state,
-  .input-group-sm > .input-group-btn > input[type="time"].ufollow-state, .input-group-sm
+  .input-group-sm > .input-group-btn > input[type="time"].unfollow-state, .input-group-sm
   input[type="time"],
   input[type="datetime-local"].input-sm,
   .input-group-sm > input[type="datetime-local"].form-control,
   .input-group-sm > input[type="datetime-local"].input-group-addon,
   .input-group-sm > .input-group-btn > input[type="datetime-local"].btn,
   .input-group-sm > .input-group-btn > input[type="datetime-local"].follow-state,
-  .input-group-sm > .input-group-btn > input[type="datetime-local"].ufollow-state, .input-group-sm
+  .input-group-sm > .input-group-btn > input[type="datetime-local"].unfollow-state, .input-group-sm
   input[type="datetime-local"],
   input[type="month"].input-sm,
   .input-group-sm > input[type="month"].form-control,
   .input-group-sm > input[type="month"].input-group-addon,
   .input-group-sm > .input-group-btn > input[type="month"].btn,
   .input-group-sm > .input-group-btn > input[type="month"].follow-state,
-  .input-group-sm > .input-group-btn > input[type="month"].ufollow-state, .input-group-sm
+  .input-group-sm > .input-group-btn > input[type="month"].unfollow-state, .input-group-sm
   input[type="month"] {
     line-height: 30px; }
   input[type="date"].input-lg, .input-group-lg > input[type="date"].form-control,
   .input-group-lg > input[type="date"].input-group-addon,
   .input-group-lg > .input-group-btn > input[type="date"].btn,
   .input-group-lg > .input-group-btn > input[type="date"].follow-state,
-  .input-group-lg > .input-group-btn > input[type="date"].ufollow-state, .input-group-lg input[type="date"],
+  .input-group-lg > .input-group-btn > input[type="date"].unfollow-state, .input-group-lg input[type="date"],
   input[type="time"].input-lg,
   .input-group-lg > input[type="time"].form-control,
   .input-group-lg > input[type="time"].input-group-addon,
   .input-group-lg > .input-group-btn > input[type="time"].btn,
   .input-group-lg > .input-group-btn > input[type="time"].follow-state,
-  .input-group-lg > .input-group-btn > input[type="time"].ufollow-state, .input-group-lg
+  .input-group-lg > .input-group-btn > input[type="time"].unfollow-state, .input-group-lg
   input[type="time"],
   input[type="datetime-local"].input-lg,
   .input-group-lg > input[type="datetime-local"].form-control,
   .input-group-lg > input[type="datetime-local"].input-group-addon,
   .input-group-lg > .input-group-btn > input[type="datetime-local"].btn,
   .input-group-lg > .input-group-btn > input[type="datetime-local"].follow-state,
-  .input-group-lg > .input-group-btn > input[type="datetime-local"].ufollow-state, .input-group-lg
+  .input-group-lg > .input-group-btn > input[type="datetime-local"].unfollow-state, .input-group-lg
   input[type="datetime-local"],
   input[type="month"].input-lg,
   .input-group-lg > input[type="month"].form-control,
   .input-group-lg > input[type="month"].input-group-addon,
   .input-group-lg > .input-group-btn > input[type="month"].btn,
   .input-group-lg > .input-group-btn > input[type="month"].follow-state,
-  .input-group-lg > .input-group-btn > input[type="month"].ufollow-state, .input-group-lg
+  .input-group-lg > .input-group-btn > input[type="month"].unfollow-state, .input-group-lg
   input[type="month"] {
     line-height: 46px; } }
 .form-group {
@@ -2612,11 +2612,11 @@ input[type="checkbox"] {
   .input-group-lg > .form-control-static.input-group-addon,
   .input-group-lg > .input-group-btn > .form-control-static.btn,
   .input-group-lg > .input-group-btn > .form-control-static.follow-state,
-  .input-group-lg > .input-group-btn > .form-control-static.ufollow-state, .form-control-static.input-sm, .input-group-sm > .form-control-static.form-control,
+  .input-group-lg > .input-group-btn > .form-control-static.unfollow-state, .form-control-static.input-sm, .input-group-sm > .form-control-static.form-control,
   .input-group-sm > .form-control-static.input-group-addon,
   .input-group-sm > .input-group-btn > .form-control-static.btn,
   .input-group-sm > .input-group-btn > .form-control-static.follow-state,
-  .input-group-sm > .input-group-btn > .form-control-static.ufollow-state {
+  .input-group-sm > .input-group-btn > .form-control-static.unfollow-state {
     padding-left: 0;
     padding-right: 0; }
 
@@ -2624,7 +2624,7 @@ input[type="checkbox"] {
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn,
 .input-group-sm > .input-group-btn > .follow-state,
-.input-group-sm > .input-group-btn > .ufollow-state {
+.input-group-sm > .input-group-btn > .unfollow-state {
   height: 30px;
   padding: 5px 10px;
   font-size: 12px;
@@ -2635,7 +2635,7 @@ select.input-sm, .input-group-sm > select.form-control,
 .input-group-sm > select.input-group-addon,
 .input-group-sm > .input-group-btn > select.btn,
 .input-group-sm > .input-group-btn > select.follow-state,
-.input-group-sm > .input-group-btn > select.ufollow-state {
+.input-group-sm > .input-group-btn > select.unfollow-state {
   height: 30px;
   line-height: 30px; }
 
@@ -2643,13 +2643,13 @@ textarea.input-sm, .input-group-sm > textarea.form-control,
 .input-group-sm > textarea.input-group-addon,
 .input-group-sm > .input-group-btn > textarea.btn,
 .input-group-sm > .input-group-btn > textarea.follow-state,
-.input-group-sm > .input-group-btn > textarea.ufollow-state,
+.input-group-sm > .input-group-btn > textarea.unfollow-state,
 select[multiple].input-sm,
 .input-group-sm > select[multiple].form-control,
 .input-group-sm > select[multiple].input-group-addon,
 .input-group-sm > .input-group-btn > select[multiple].btn,
 .input-group-sm > .input-group-btn > select[multiple].follow-state,
-.input-group-sm > .input-group-btn > select[multiple].ufollow-state {
+.input-group-sm > .input-group-btn > select[multiple].unfollow-state {
   height: auto; }
 
 .form-group-sm .form-control {
@@ -2675,7 +2675,7 @@ select[multiple].input-sm,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn,
 .input-group-lg > .input-group-btn > .follow-state,
-.input-group-lg > .input-group-btn > .ufollow-state {
+.input-group-lg > .input-group-btn > .unfollow-state {
   height: 46px;
   padding: 10px 16px;
   font-size: 18px;
@@ -2686,7 +2686,7 @@ select.input-lg, .input-group-lg > select.form-control,
 .input-group-lg > select.input-group-addon,
 .input-group-lg > .input-group-btn > select.btn,
 .input-group-lg > .input-group-btn > select.follow-state,
-.input-group-lg > .input-group-btn > select.ufollow-state {
+.input-group-lg > .input-group-btn > select.unfollow-state {
   height: 46px;
   line-height: 46px; }
 
@@ -2694,13 +2694,13 @@ textarea.input-lg, .input-group-lg > textarea.form-control,
 .input-group-lg > textarea.input-group-addon,
 .input-group-lg > .input-group-btn > textarea.btn,
 .input-group-lg > .input-group-btn > textarea.follow-state,
-.input-group-lg > .input-group-btn > textarea.ufollow-state,
+.input-group-lg > .input-group-btn > textarea.unfollow-state,
 select[multiple].input-lg,
 .input-group-lg > select[multiple].form-control,
 .input-group-lg > select[multiple].input-group-addon,
 .input-group-lg > .input-group-btn > select[multiple].btn,
 .input-group-lg > .input-group-btn > select[multiple].follow-state,
-.input-group-lg > .input-group-btn > select[multiple].ufollow-state {
+.input-group-lg > .input-group-btn > select[multiple].unfollow-state {
   height: auto; }
 
 .form-group-lg .form-control {
@@ -2743,7 +2743,7 @@ select[multiple].input-lg,
 .input-group-lg > .input-group-addon + .form-control-feedback,
 .input-group-lg > .input-group-btn > .btn + .form-control-feedback,
 .input-group-lg > .input-group-btn > .follow-state + .form-control-feedback,
-.input-group-lg > .input-group-btn > .ufollow-state + .form-control-feedback,
+.input-group-lg > .input-group-btn > .unfollow-state + .form-control-feedback,
 .input-group-lg + .form-control-feedback,
 .form-group-lg .form-control + .form-control-feedback {
   width: 46px;
@@ -2754,7 +2754,7 @@ select[multiple].input-lg,
 .input-group-sm > .input-group-addon + .form-control-feedback,
 .input-group-sm > .input-group-btn > .btn + .form-control-feedback,
 .input-group-sm > .input-group-btn > .follow-state + .form-control-feedback,
-.input-group-sm > .input-group-btn > .ufollow-state + .form-control-feedback,
+.input-group-sm > .input-group-btn > .unfollow-state + .form-control-feedback,
 .input-group-sm + .form-control-feedback,
 .form-group-sm .form-control + .form-control-feedback {
   width: 30px;
@@ -2911,7 +2911,7 @@ select[multiple].input-lg,
     padding-top: 6px;
     font-size: 12px; } }
 
-.btn, .follow-state, .ufollow-state {
+.btn, .follow-state, .unfollow-state {
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -2930,25 +2930,25 @@ select[multiple].input-lg,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
-  .btn:focus, .follow-state:focus, .ufollow-state:focus, .btn.focus, .focus.follow-state, .focus.ufollow-state, .btn:active:focus, .follow-state:active:focus, .ufollow-state:active:focus, .btn:active.focus, .follow-state:active.focus, .ufollow-state:active.focus, .btn.active:focus, .active.follow-state:focus, .active.ufollow-state:focus, .btn.active.focus, .active.focus.follow-state, .active.focus.ufollow-state {
+  .btn:focus, .follow-state:focus, .unfollow-state:focus, .btn.focus, .focus.follow-state, .focus.unfollow-state, .btn:active:focus, .follow-state:active:focus, .unfollow-state:active:focus, .btn:active.focus, .follow-state:active.focus, .unfollow-state:active.focus, .btn.active:focus, .active.follow-state:focus, .active.unfollow-state:focus, .btn.active.focus, .active.focus.follow-state, .active.focus.unfollow-state {
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px; }
-  .btn:hover, .follow-state:hover, .ufollow-state:hover, .btn:focus, .follow-state:focus, .ufollow-state:focus, .btn.focus, .focus.follow-state, .focus.ufollow-state {
+  .btn:hover, .follow-state:hover, .unfollow-state:hover, .btn:focus, .follow-state:focus, .unfollow-state:focus, .btn.focus, .focus.follow-state, .focus.unfollow-state {
     color: #333;
     text-decoration: none; }
-  .btn:active, .follow-state:active, .ufollow-state:active, .btn.active, .active.follow-state, .active.ufollow-state {
+  .btn:active, .follow-state:active, .unfollow-state:active, .btn.active, .active.follow-state, .active.unfollow-state {
     outline: 0;
     background-image: none;
     -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
-  .btn.disabled, .disabled.follow-state, .disabled.ufollow-state, .btn[disabled], [disabled].follow-state, [disabled].ufollow-state, fieldset[disabled] .btn, fieldset[disabled] .follow-state, fieldset[disabled] .ufollow-state {
+  .btn.disabled, .disabled.follow-state, .disabled.unfollow-state, .btn[disabled], [disabled].follow-state, [disabled].unfollow-state, fieldset[disabled] .btn, fieldset[disabled] .follow-state, fieldset[disabled] .unfollow-state {
     cursor: not-allowed;
     opacity: 0.65;
     filter: alpha(opacity=65);
     -webkit-box-shadow: none;
     box-shadow: none; }
 
-a.btn.disabled, a.disabled.follow-state, a.disabled.ufollow-state, fieldset[disabled] a.btn, fieldset[disabled] a.follow-state, fieldset[disabled] a.ufollow-state {
+a.btn.disabled, a.disabled.follow-state, a.disabled.unfollow-state, fieldset[disabled] a.btn, fieldset[disabled] a.follow-state, fieldset[disabled] a.unfollow-state {
   pointer-events: none; }
 
 .btn-default {
@@ -3096,32 +3096,32 @@ a.btn.disabled, a.disabled.follow-state, a.disabled.ufollow-state, fieldset[disa
     color: #f0ad4e;
     background-color: #fff; }
 
-.btn-danger, .ufollow-state {
+.btn-danger, .unfollow-state {
   color: #fff;
   background-color: #d9534f;
   border-color: #d43f3a; }
-  .btn-danger:focus, .ufollow-state:focus, .btn-danger.focus, .focus.ufollow-state {
+  .btn-danger:focus, .unfollow-state:focus, .btn-danger.focus, .focus.unfollow-state {
     color: #fff;
     background-color: #c9302c;
     border-color: #761c19; }
-  .btn-danger:hover, .ufollow-state:hover {
+  .btn-danger:hover, .unfollow-state:hover {
     color: #fff;
     background-color: #c9302c;
     border-color: #ac2925; }
-  .btn-danger:active, .ufollow-state:active, .btn-danger.active, .active.ufollow-state, .open > .btn-danger.dropdown-toggle, .open > .dropdown-toggle.ufollow-state {
+  .btn-danger:active, .unfollow-state:active, .btn-danger.active, .active.unfollow-state, .open > .btn-danger.dropdown-toggle, .open > .dropdown-toggle.unfollow-state {
     color: #fff;
     background-color: #c9302c;
     border-color: #ac2925; }
-    .btn-danger:active:hover, .ufollow-state:active:hover, .btn-danger:active:focus, .ufollow-state:active:focus, .btn-danger:active.focus, .ufollow-state:active.focus, .btn-danger.active:hover, .active.ufollow-state:hover, .btn-danger.active:focus, .active.ufollow-state:focus, .btn-danger.active.focus, .active.focus.ufollow-state, .open > .btn-danger.dropdown-toggle:hover, .open > .dropdown-toggle.ufollow-state:hover, .open > .btn-danger.dropdown-toggle:focus, .open > .dropdown-toggle.ufollow-state:focus, .open > .btn-danger.dropdown-toggle.focus, .open > .dropdown-toggle.focus.ufollow-state {
+    .btn-danger:active:hover, .unfollow-state:active:hover, .btn-danger:active:focus, .unfollow-state:active:focus, .btn-danger:active.focus, .unfollow-state:active.focus, .btn-danger.active:hover, .active.unfollow-state:hover, .btn-danger.active:focus, .active.unfollow-state:focus, .btn-danger.active.focus, .active.focus.unfollow-state, .open > .btn-danger.dropdown-toggle:hover, .open > .dropdown-toggle.unfollow-state:hover, .open > .btn-danger.dropdown-toggle:focus, .open > .dropdown-toggle.unfollow-state:focus, .open > .btn-danger.dropdown-toggle.focus, .open > .dropdown-toggle.focus.unfollow-state {
       color: #fff;
       background-color: #ac2925;
       border-color: #761c19; }
-  .btn-danger:active, .ufollow-state:active, .btn-danger.active, .active.ufollow-state, .open > .btn-danger.dropdown-toggle, .open > .dropdown-toggle.ufollow-state {
+  .btn-danger:active, .unfollow-state:active, .btn-danger.active, .active.unfollow-state, .open > .btn-danger.dropdown-toggle, .open > .dropdown-toggle.unfollow-state {
     background-image: none; }
-  .btn-danger.disabled:hover, .disabled.ufollow-state:hover, .btn-danger.disabled:focus, .disabled.ufollow-state:focus, .btn-danger.disabled.focus, .disabled.focus.ufollow-state, .btn-danger[disabled]:hover, [disabled].ufollow-state:hover, .btn-danger[disabled]:focus, [disabled].ufollow-state:focus, .btn-danger[disabled].focus, [disabled].focus.ufollow-state, fieldset[disabled] .btn-danger:hover, fieldset[disabled] .ufollow-state:hover, fieldset[disabled] .btn-danger:focus, fieldset[disabled] .ufollow-state:focus, fieldset[disabled] .btn-danger.focus, fieldset[disabled] .focus.ufollow-state {
+  .btn-danger.disabled:hover, .disabled.unfollow-state:hover, .btn-danger.disabled:focus, .disabled.unfollow-state:focus, .btn-danger.disabled.focus, .disabled.focus.unfollow-state, .btn-danger[disabled]:hover, [disabled].unfollow-state:hover, .btn-danger[disabled]:focus, [disabled].unfollow-state:focus, .btn-danger[disabled].focus, [disabled].focus.unfollow-state, fieldset[disabled] .btn-danger:hover, fieldset[disabled] .unfollow-state:hover, fieldset[disabled] .btn-danger:focus, fieldset[disabled] .unfollow-state:focus, fieldset[disabled] .btn-danger.focus, fieldset[disabled] .focus.unfollow-state {
     background-color: #d9534f;
     border-color: #d43f3a; }
-  .btn-danger .badge, .ufollow-state .badge {
+  .btn-danger .badge, .unfollow-state .badge {
     color: #d9534f;
     background-color: #fff; }
 
@@ -3143,19 +3143,19 @@ a.btn.disabled, a.disabled.follow-state, a.disabled.ufollow-state, fieldset[disa
     color: #777777;
     text-decoration: none; }
 
-.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .follow-state, .btn-group-lg > .ufollow-state {
+.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .follow-state, .btn-group-lg > .unfollow-state {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33333;
   border-radius: 6px; }
 
-.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .follow-state, .btn-group-sm > .ufollow-state {
+.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .follow-state, .btn-group-sm > .unfollow-state {
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 3px; }
 
-.btn-xs, .btn-group-xs > .btn, .btn-group-xs > .follow-state, .btn-group-xs > .ufollow-state {
+.btn-xs, .btn-group-xs > .btn, .btn-group-xs > .follow-state, .btn-group-xs > .unfollow-state {
   padding: 1px 5px;
   font-size: 12px;
   line-height: 1.5;
@@ -3335,34 +3335,34 @@ tbody.collapse.in {
   position: relative;
   display: inline-block;
   vertical-align: middle; }
-  .btn-group > .btn, .btn-group > .follow-state, .btn-group > .ufollow-state,
+  .btn-group > .btn, .btn-group > .follow-state, .btn-group > .unfollow-state,
   .btn-group-vertical > .btn,
   .btn-group-vertical > .follow-state,
-  .btn-group-vertical > .ufollow-state {
+  .btn-group-vertical > .unfollow-state {
     position: relative;
     float: left; }
-    .btn-group > .btn:hover, .btn-group > .follow-state:hover, .btn-group > .ufollow-state:hover, .btn-group > .btn:focus, .btn-group > .follow-state:focus, .btn-group > .ufollow-state:focus, .btn-group > .btn:active, .btn-group > .follow-state:active, .btn-group > .ufollow-state:active, .btn-group > .btn.active, .btn-group > .active.follow-state, .btn-group > .active.ufollow-state,
+    .btn-group > .btn:hover, .btn-group > .follow-state:hover, .btn-group > .unfollow-state:hover, .btn-group > .btn:focus, .btn-group > .follow-state:focus, .btn-group > .unfollow-state:focus, .btn-group > .btn:active, .btn-group > .follow-state:active, .btn-group > .unfollow-state:active, .btn-group > .btn.active, .btn-group > .active.follow-state, .btn-group > .active.unfollow-state,
     .btn-group-vertical > .btn:hover,
     .btn-group-vertical > .follow-state:hover,
-    .btn-group-vertical > .ufollow-state:hover,
+    .btn-group-vertical > .unfollow-state:hover,
     .btn-group-vertical > .btn:focus,
     .btn-group-vertical > .follow-state:focus,
-    .btn-group-vertical > .ufollow-state:focus,
+    .btn-group-vertical > .unfollow-state:focus,
     .btn-group-vertical > .btn:active,
     .btn-group-vertical > .follow-state:active,
-    .btn-group-vertical > .ufollow-state:active,
+    .btn-group-vertical > .unfollow-state:active,
     .btn-group-vertical > .btn.active,
     .btn-group-vertical > .active.follow-state,
-    .btn-group-vertical > .active.ufollow-state {
+    .btn-group-vertical > .active.unfollow-state {
       z-index: 2; }
 
-.btn-group .btn + .btn, .btn-group .follow-state + .btn, .btn-group .ufollow-state + .btn, .btn-group .btn + .follow-state, .btn-group .follow-state + .follow-state, .btn-group .ufollow-state + .follow-state, .btn-group .btn + .ufollow-state, .btn-group .follow-state + .ufollow-state, .btn-group .ufollow-state + .ufollow-state,
+.btn-group .btn + .btn, .btn-group .follow-state + .btn, .btn-group .unfollow-state + .btn, .btn-group .btn + .follow-state, .btn-group .follow-state + .follow-state, .btn-group .unfollow-state + .follow-state, .btn-group .btn + .unfollow-state, .btn-group .follow-state + .unfollow-state, .btn-group .unfollow-state + .unfollow-state,
 .btn-group .btn + .btn-group,
 .btn-group .follow-state + .btn-group,
-.btn-group .ufollow-state + .btn-group,
+.btn-group .unfollow-state + .btn-group,
 .btn-group .btn-group + .btn,
 .btn-group .btn-group + .follow-state,
-.btn-group .btn-group + .ufollow-state,
+.btn-group .btn-group + .unfollow-state,
 .btn-group .btn-group + .btn-group {
   margin-left: -1px; }
 
@@ -3373,25 +3373,25 @@ tbody.collapse.in {
     display: table; }
   .btn-toolbar:after {
     clear: both; }
-  .btn-toolbar .btn, .btn-toolbar .follow-state, .btn-toolbar .ufollow-state,
+  .btn-toolbar .btn, .btn-toolbar .follow-state, .btn-toolbar .unfollow-state,
   .btn-toolbar .btn-group,
   .btn-toolbar .input-group {
     float: left; }
-  .btn-toolbar > .btn, .btn-toolbar > .follow-state, .btn-toolbar > .ufollow-state,
+  .btn-toolbar > .btn, .btn-toolbar > .follow-state, .btn-toolbar > .unfollow-state,
   .btn-toolbar > .btn-group,
   .btn-toolbar > .input-group {
     margin-left: 5px; }
 
-.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > .follow-state:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > .ufollow-state:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > .follow-state:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > .unfollow-state:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0; }
 
-.btn-group > .btn:first-child, .btn-group > .follow-state:first-child, .btn-group > .ufollow-state:first-child {
+.btn-group > .btn:first-child, .btn-group > .follow-state:first-child, .btn-group > .unfollow-state:first-child {
   margin-left: 0; }
-  .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > .follow-state:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > .ufollow-state:first-child:not(:last-child):not(.dropdown-toggle) {
+  .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > .follow-state:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > .unfollow-state:first-child:not(:last-child):not(.dropdown-toggle) {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0; }
 
-.btn-group > .btn:last-child:not(:first-child), .btn-group > .follow-state:last-child:not(:first-child), .btn-group > .ufollow-state:last-child:not(:first-child),
+.btn-group > .btn:last-child:not(:first-child), .btn-group > .follow-state:last-child:not(:first-child), .btn-group > .unfollow-state:last-child:not(:first-child),
 .btn-group > .dropdown-toggle:not(:first-child) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0; }
@@ -3399,15 +3399,15 @@ tbody.collapse.in {
 .btn-group > .btn-group {
   float: left; }
 
-.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, .btn-group > .btn-group:not(:first-child):not(:last-child) > .follow-state, .btn-group > .btn-group:not(:first-child):not(:last-child) > .ufollow-state {
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, .btn-group > .btn-group:not(:first-child):not(:last-child) > .follow-state, .btn-group > .btn-group:not(:first-child):not(:last-child) > .unfollow-state {
   border-radius: 0; }
 
-.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child, .btn-group > .btn-group:first-child:not(:last-child) > .follow-state:last-child, .btn-group > .btn-group:first-child:not(:last-child) > .ufollow-state:last-child,
+.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child, .btn-group > .btn-group:first-child:not(:last-child) > .follow-state:last-child, .btn-group > .btn-group:first-child:not(:last-child) > .unfollow-state:last-child,
 .btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0; }
 
-.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child, .btn-group > .btn-group:last-child:not(:first-child) > .follow-state:first-child, .btn-group > .btn-group:last-child:not(:first-child) > .ufollow-state:first-child {
+.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child, .btn-group > .btn-group:last-child:not(:first-child) > .follow-state:first-child, .btn-group > .btn-group:last-child:not(:first-child) > .unfollow-state:first-child {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0; }
 
@@ -3415,11 +3415,11 @@ tbody.collapse.in {
 .btn-group.open .dropdown-toggle {
   outline: 0; }
 
-.btn-group > .btn + .dropdown-toggle, .btn-group > .follow-state + .dropdown-toggle, .btn-group > .ufollow-state + .dropdown-toggle {
+.btn-group > .btn + .dropdown-toggle, .btn-group > .follow-state + .dropdown-toggle, .btn-group > .unfollow-state + .dropdown-toggle {
   padding-left: 8px;
   padding-right: 8px; }
 
-.btn-group > .btn-lg + .dropdown-toggle, .btn-group-lg.btn-group > .btn + .dropdown-toggle, .btn-group-lg.btn-group > .follow-state + .dropdown-toggle, .btn-group-lg.btn-group > .ufollow-state + .dropdown-toggle {
+.btn-group > .btn-lg + .dropdown-toggle, .btn-group-lg.btn-group > .btn + .dropdown-toggle, .btn-group-lg.btn-group > .follow-state + .dropdown-toggle, .btn-group-lg.btn-group > .unfollow-state + .dropdown-toggle {
   padding-left: 12px;
   padding-right: 12px; }
 
@@ -3430,21 +3430,21 @@ tbody.collapse.in {
     -webkit-box-shadow: none;
     box-shadow: none; }
 
-.btn .caret, .follow-state .caret, .ufollow-state .caret {
+.btn .caret, .follow-state .caret, .unfollow-state .caret {
   margin-left: 0; }
 
-.btn-lg .caret, .btn-group-lg > .btn .caret, .btn-group-lg > .follow-state .caret, .btn-group-lg > .ufollow-state .caret {
+.btn-lg .caret, .btn-group-lg > .btn .caret, .btn-group-lg > .follow-state .caret, .btn-group-lg > .unfollow-state .caret {
   border-width: 5px 5px 0;
   border-bottom-width: 0; }
 
-.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret, .dropup .btn-group-lg > .follow-state .caret, .dropup .btn-group-lg > .ufollow-state .caret {
+.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret, .dropup .btn-group-lg > .follow-state .caret, .dropup .btn-group-lg > .unfollow-state .caret {
   border-width: 0 5px 5px; }
 
-.btn-group-vertical > .btn, .btn-group-vertical > .follow-state, .btn-group-vertical > .ufollow-state,
+.btn-group-vertical > .btn, .btn-group-vertical > .follow-state, .btn-group-vertical > .unfollow-state,
 .btn-group-vertical > .btn-group,
 .btn-group-vertical > .btn-group > .btn,
 .btn-group-vertical > .btn-group > .follow-state,
-.btn-group-vertical > .btn-group > .ufollow-state {
+.btn-group-vertical > .btn-group > .unfollow-state {
   display: block;
   float: none;
   width: 100%;
@@ -3454,41 +3454,41 @@ tbody.collapse.in {
   display: table; }
 .btn-group-vertical > .btn-group:after {
   clear: both; }
-.btn-group-vertical > .btn-group > .btn, .btn-group-vertical > .btn-group > .follow-state, .btn-group-vertical > .btn-group > .ufollow-state {
+.btn-group-vertical > .btn-group > .btn, .btn-group-vertical > .btn-group > .follow-state, .btn-group-vertical > .btn-group > .unfollow-state {
   float: none; }
-.btn-group-vertical > .btn + .btn, .btn-group-vertical > .follow-state + .btn, .btn-group-vertical > .ufollow-state + .btn, .btn-group-vertical > .btn + .follow-state, .btn-group-vertical > .follow-state + .follow-state, .btn-group-vertical > .ufollow-state + .follow-state, .btn-group-vertical > .btn + .ufollow-state, .btn-group-vertical > .follow-state + .ufollow-state, .btn-group-vertical > .ufollow-state + .ufollow-state,
+.btn-group-vertical > .btn + .btn, .btn-group-vertical > .follow-state + .btn, .btn-group-vertical > .unfollow-state + .btn, .btn-group-vertical > .btn + .follow-state, .btn-group-vertical > .follow-state + .follow-state, .btn-group-vertical > .unfollow-state + .follow-state, .btn-group-vertical > .btn + .unfollow-state, .btn-group-vertical > .follow-state + .unfollow-state, .btn-group-vertical > .unfollow-state + .unfollow-state,
 .btn-group-vertical > .btn + .btn-group,
 .btn-group-vertical > .follow-state + .btn-group,
-.btn-group-vertical > .ufollow-state + .btn-group,
+.btn-group-vertical > .unfollow-state + .btn-group,
 .btn-group-vertical > .btn-group + .btn,
 .btn-group-vertical > .btn-group + .follow-state,
-.btn-group-vertical > .btn-group + .ufollow-state,
+.btn-group-vertical > .btn-group + .unfollow-state,
 .btn-group-vertical > .btn-group + .btn-group {
   margin-top: -1px;
   margin-left: 0; }
 
-.btn-group-vertical > .btn:not(:first-child):not(:last-child), .btn-group-vertical > .follow-state:not(:first-child):not(:last-child), .btn-group-vertical > .ufollow-state:not(:first-child):not(:last-child) {
+.btn-group-vertical > .btn:not(:first-child):not(:last-child), .btn-group-vertical > .follow-state:not(:first-child):not(:last-child), .btn-group-vertical > .unfollow-state:not(:first-child):not(:last-child) {
   border-radius: 0; }
-.btn-group-vertical > .btn:first-child:not(:last-child), .btn-group-vertical > .follow-state:first-child:not(:last-child), .btn-group-vertical > .ufollow-state:first-child:not(:last-child) {
+.btn-group-vertical > .btn:first-child:not(:last-child), .btn-group-vertical > .follow-state:first-child:not(:last-child), .btn-group-vertical > .unfollow-state:first-child:not(:last-child) {
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0; }
-.btn-group-vertical > .btn:last-child:not(:first-child), .btn-group-vertical > .follow-state:last-child:not(:first-child), .btn-group-vertical > .ufollow-state:last-child:not(:first-child) {
+.btn-group-vertical > .btn:last-child:not(:first-child), .btn-group-vertical > .follow-state:last-child:not(:first-child), .btn-group-vertical > .unfollow-state:last-child:not(:first-child) {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px; }
 
-.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .follow-state, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .ufollow-state {
+.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .follow-state, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .unfollow-state {
   border-radius: 0; }
 
-.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > .follow-state:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > .ufollow-state:last-child,
+.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > .follow-state:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > .unfollow-state:last-child,
 .btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0; }
 
-.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > .follow-state:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > .ufollow-state:first-child {
+.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > .follow-state:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > .unfollow-state:first-child {
   border-top-right-radius: 0;
   border-top-left-radius: 0; }
 
@@ -3497,26 +3497,26 @@ tbody.collapse.in {
   width: 100%;
   table-layout: fixed;
   border-collapse: separate; }
-  .btn-group-justified > .btn, .btn-group-justified > .follow-state, .btn-group-justified > .ufollow-state,
+  .btn-group-justified > .btn, .btn-group-justified > .follow-state, .btn-group-justified > .unfollow-state,
   .btn-group-justified > .btn-group {
     float: none;
     display: table-cell;
     width: 1%; }
-  .btn-group-justified > .btn-group .btn, .btn-group-justified > .btn-group .follow-state, .btn-group-justified > .btn-group .ufollow-state {
+  .btn-group-justified > .btn-group .btn, .btn-group-justified > .btn-group .follow-state, .btn-group-justified > .btn-group .unfollow-state {
     width: 100%; }
   .btn-group-justified > .btn-group .dropdown-menu {
     left: auto; }
 
-[data-toggle="buttons"] > .btn input[type="radio"], [data-toggle="buttons"] > .follow-state input[type="radio"], [data-toggle="buttons"] > .ufollow-state input[type="radio"],
+[data-toggle="buttons"] > .btn input[type="radio"], [data-toggle="buttons"] > .follow-state input[type="radio"], [data-toggle="buttons"] > .unfollow-state input[type="radio"],
 [data-toggle="buttons"] > .btn input[type="checkbox"],
 [data-toggle="buttons"] > .follow-state input[type="checkbox"],
-[data-toggle="buttons"] > .ufollow-state input[type="checkbox"],
+[data-toggle="buttons"] > .unfollow-state input[type="checkbox"],
 [data-toggle="buttons"] > .btn-group > .btn input[type="radio"],
 [data-toggle="buttons"] > .btn-group > .follow-state input[type="radio"],
-[data-toggle="buttons"] > .btn-group > .ufollow-state input[type="radio"],
+[data-toggle="buttons"] > .btn-group > .unfollow-state input[type="radio"],
 [data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"],
 [data-toggle="buttons"] > .btn-group > .follow-state input[type="checkbox"],
-[data-toggle="buttons"] > .btn-group > .ufollow-state input[type="checkbox"] {
+[data-toggle="buttons"] > .btn-group > .unfollow-state input[type="checkbox"] {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none; }
@@ -3567,7 +3567,7 @@ tbody.collapse.in {
   .input-group-sm > .input-group-addon,
   .input-group-sm > .input-group-btn > .input-group-addon.btn,
   .input-group-sm > .input-group-btn > .input-group-addon.follow-state,
-  .input-group-sm > .input-group-btn > .input-group-addon.ufollow-state {
+  .input-group-sm > .input-group-btn > .input-group-addon.unfollow-state {
     padding: 5px 10px;
     font-size: 12px;
     border-radius: 3px; }
@@ -3575,7 +3575,7 @@ tbody.collapse.in {
   .input-group-lg > .input-group-addon,
   .input-group-lg > .input-group-btn > .input-group-addon.btn,
   .input-group-lg > .input-group-btn > .input-group-addon.follow-state,
-  .input-group-lg > .input-group-btn > .input-group-addon.ufollow-state {
+  .input-group-lg > .input-group-btn > .input-group-addon.unfollow-state {
     padding: 10px 16px;
     font-size: 18px;
     border-radius: 6px; }
@@ -3587,17 +3587,17 @@ tbody.collapse.in {
 .input-group-addon:first-child,
 .input-group-btn:first-child > .btn,
 .input-group-btn:first-child > .follow-state,
-.input-group-btn:first-child > .ufollow-state,
+.input-group-btn:first-child > .unfollow-state,
 .input-group-btn:first-child > .btn-group > .btn,
 .input-group-btn:first-child > .btn-group > .follow-state,
-.input-group-btn:first-child > .btn-group > .ufollow-state,
+.input-group-btn:first-child > .btn-group > .unfollow-state,
 .input-group-btn:first-child > .dropdown-toggle,
 .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
 .input-group-btn:last-child > .follow-state:not(:last-child):not(.dropdown-toggle),
-.input-group-btn:last-child > .ufollow-state:not(:last-child):not(.dropdown-toggle),
+.input-group-btn:last-child > .unfollow-state:not(:last-child):not(.dropdown-toggle),
 .input-group-btn:last-child > .btn-group:not(:last-child) > .btn,
 .input-group-btn:last-child > .btn-group:not(:last-child) > .follow-state,
-.input-group-btn:last-child > .btn-group:not(:last-child) > .ufollow-state {
+.input-group-btn:last-child > .btn-group:not(:last-child) > .unfollow-state {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0; }
 
@@ -3608,17 +3608,17 @@ tbody.collapse.in {
 .input-group-addon:last-child,
 .input-group-btn:last-child > .btn,
 .input-group-btn:last-child > .follow-state,
-.input-group-btn:last-child > .ufollow-state,
+.input-group-btn:last-child > .unfollow-state,
 .input-group-btn:last-child > .btn-group > .btn,
 .input-group-btn:last-child > .btn-group > .follow-state,
-.input-group-btn:last-child > .btn-group > .ufollow-state,
+.input-group-btn:last-child > .btn-group > .unfollow-state,
 .input-group-btn:last-child > .dropdown-toggle,
 .input-group-btn:first-child > .btn:not(:first-child),
 .input-group-btn:first-child > .follow-state:not(:first-child),
-.input-group-btn:first-child > .ufollow-state:not(:first-child),
+.input-group-btn:first-child > .unfollow-state:not(:first-child),
 .input-group-btn:first-child > .btn-group:not(:first-child) > .btn,
 .input-group-btn:first-child > .btn-group:not(:first-child) > .follow-state,
-.input-group-btn:first-child > .btn-group:not(:first-child) > .ufollow-state {
+.input-group-btn:first-child > .btn-group:not(:first-child) > .unfollow-state {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0; }
 
@@ -3629,16 +3629,16 @@ tbody.collapse.in {
   position: relative;
   font-size: 0;
   white-space: nowrap; }
-  .input-group-btn > .btn, .input-group-btn > .follow-state, .input-group-btn > .ufollow-state {
+  .input-group-btn > .btn, .input-group-btn > .follow-state, .input-group-btn > .unfollow-state {
     position: relative; }
-    .input-group-btn > .btn + .btn, .input-group-btn > .follow-state + .btn, .input-group-btn > .ufollow-state + .btn, .input-group-btn > .btn + .follow-state, .input-group-btn > .follow-state + .follow-state, .input-group-btn > .ufollow-state + .follow-state, .input-group-btn > .btn + .ufollow-state, .input-group-btn > .follow-state + .ufollow-state, .input-group-btn > .ufollow-state + .ufollow-state {
+    .input-group-btn > .btn + .btn, .input-group-btn > .follow-state + .btn, .input-group-btn > .unfollow-state + .btn, .input-group-btn > .btn + .follow-state, .input-group-btn > .follow-state + .follow-state, .input-group-btn > .unfollow-state + .follow-state, .input-group-btn > .btn + .unfollow-state, .input-group-btn > .follow-state + .unfollow-state, .input-group-btn > .unfollow-state + .unfollow-state {
       margin-left: -1px; }
-    .input-group-btn > .btn:hover, .input-group-btn > .follow-state:hover, .input-group-btn > .ufollow-state:hover, .input-group-btn > .btn:focus, .input-group-btn > .follow-state:focus, .input-group-btn > .ufollow-state:focus, .input-group-btn > .btn:active, .input-group-btn > .follow-state:active, .input-group-btn > .ufollow-state:active {
+    .input-group-btn > .btn:hover, .input-group-btn > .follow-state:hover, .input-group-btn > .unfollow-state:hover, .input-group-btn > .btn:focus, .input-group-btn > .follow-state:focus, .input-group-btn > .unfollow-state:focus, .input-group-btn > .btn:active, .input-group-btn > .follow-state:active, .input-group-btn > .unfollow-state:active {
       z-index: 2; }
-  .input-group-btn:first-child > .btn, .input-group-btn:first-child > .follow-state, .input-group-btn:first-child > .ufollow-state,
+  .input-group-btn:first-child > .btn, .input-group-btn:first-child > .follow-state, .input-group-btn:first-child > .unfollow-state,
   .input-group-btn:first-child > .btn-group {
     margin-right: -1px; }
-  .input-group-btn:last-child > .btn, .input-group-btn:last-child > .follow-state, .input-group-btn:last-child > .ufollow-state,
+  .input-group-btn:last-child > .btn, .input-group-btn:last-child > .follow-state, .input-group-btn:last-child > .unfollow-state,
   .input-group-btn:last-child > .btn-group {
     z-index: 2;
     margin-left: -1px; }
@@ -4015,10 +4015,10 @@ tbody.collapse.in {
 .navbar-btn {
   margin-top: 8px;
   margin-bottom: 8px; }
-  .navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn, .btn-group-sm > .navbar-btn.follow-state, .btn-group-sm > .navbar-btn.ufollow-state {
+  .navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn, .btn-group-sm > .navbar-btn.follow-state, .btn-group-sm > .navbar-btn.unfollow-state {
     margin-top: 10px;
     margin-bottom: 10px; }
-  .navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn, .btn-group-xs > .navbar-btn.follow-state, .btn-group-xs > .navbar-btn.ufollow-state {
+  .navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn, .btn-group-xs > .navbar-btn.follow-state, .btn-group-xs > .navbar-btn.unfollow-state {
     margin-top: 14px;
     margin-bottom: 14px; }
 
@@ -4303,7 +4303,7 @@ tbody.collapse.in {
   border-radius: .25em; }
   .label:empty {
     display: none; }
-  .btn .label, .follow-state .label, .ufollow-state .label {
+  .btn .label, .follow-state .label, .unfollow-state .label {
     position: relative;
     top: -1px; }
 
@@ -4357,10 +4357,10 @@ a.label:hover, a.label:focus {
   border-radius: 10px; }
   .badge:empty {
     display: none; }
-  .btn .badge, .follow-state .badge, .ufollow-state .badge {
+  .btn .badge, .follow-state .badge, .unfollow-state .badge {
     position: relative;
     top: -1px; }
-  .btn-xs .badge, .btn-group-xs > .btn .badge, .btn-group-xs > .follow-state .badge, .btn-group-xs > .ufollow-state .badge, .btn-group-xs > .btn .badge, .btn-group-xs > .follow-state .badge, .btn-group-xs > .ufollow-state .badge {
+  .btn-xs .badge, .btn-group-xs > .btn .badge, .btn-group-xs > .follow-state .badge, .btn-group-xs > .unfollow-state .badge, .btn-group-xs > .btn .badge, .btn-group-xs > .follow-state .badge, .btn-group-xs > .unfollow-state .badge {
     top: 0;
     padding: 1px 5px; }
   .list-group-item.active > .badge, .nav-pills > .active > a > .badge {
@@ -5237,10 +5237,10 @@ button.close {
     display: table; }
   .modal-footer:after {
     clear: both; }
-  .modal-footer .btn + .btn, .modal-footer .follow-state + .btn, .modal-footer .ufollow-state + .btn, .modal-footer .btn + .follow-state, .modal-footer .follow-state + .follow-state, .modal-footer .ufollow-state + .follow-state, .modal-footer .btn + .ufollow-state, .modal-footer .follow-state + .ufollow-state, .modal-footer .ufollow-state + .ufollow-state {
+  .modal-footer .btn + .btn, .modal-footer .follow-state + .btn, .modal-footer .unfollow-state + .btn, .modal-footer .btn + .follow-state, .modal-footer .follow-state + .follow-state, .modal-footer .unfollow-state + .follow-state, .modal-footer .btn + .unfollow-state, .modal-footer .follow-state + .unfollow-state, .modal-footer .unfollow-state + .unfollow-state {
     margin-left: 5px;
     margin-bottom: 0; }
-  .modal-footer .btn-group .btn + .btn, .modal-footer .btn-group .follow-state + .btn, .modal-footer .btn-group .ufollow-state + .btn, .modal-footer .btn-group .btn + .follow-state, .modal-footer .btn-group .follow-state + .follow-state, .modal-footer .btn-group .ufollow-state + .follow-state, .modal-footer .btn-group .btn + .ufollow-state, .modal-footer .btn-group .follow-state + .ufollow-state, .modal-footer .btn-group .ufollow-state + .ufollow-state {
+  .modal-footer .btn-group .btn + .btn, .modal-footer .btn-group .follow-state + .btn, .modal-footer .btn-group .unfollow-state + .btn, .modal-footer .btn-group .btn + .follow-state, .modal-footer .btn-group .follow-state + .follow-state, .modal-footer .btn-group .unfollow-state + .follow-state, .modal-footer .btn-group .btn + .unfollow-state, .modal-footer .btn-group .follow-state + .unfollow-state, .modal-footer .btn-group .unfollow-state + .unfollow-state {
     margin-left: -1px; }
   .modal-footer .btn-block + .btn-block {
     margin-left: 0; }
@@ -5652,7 +5652,7 @@ button.close {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
-  .carousel-caption .btn, .carousel-caption .follow-state, .carousel-caption .ufollow-state {
+  .carousel-caption .btn, .carousel-caption .follow-state, .carousel-caption .unfollow-state {
     text-shadow: none; }
 
 @media screen and (min-width: 768px) {
@@ -5894,5 +5894,7 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+.google {
+  background-color: red; }
 
 /*# sourceMappingURL=style.css.map */

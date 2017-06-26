@@ -1,56 +1,63 @@
-img.image-logo{
-	height: 25px;
-	float: left;
-	padding-right: 5px;
-}
-.navbar-inverse{
-	background-color: blue !important;
-}
-.navbar-inverse a{
-	color: white !important;
+img.image-logo {
+    height: 25px;
+    float: left;
+    padding-right: 5px;
 }
 
-.navbar-inverse a:hover{
-	color: rgb(225,225,225) !important;
-}
-.tweet-avatar{
-	float: left;
-	margin-right: 15px;
-	padding-left: 10px;
+.navbar-inverse {
+    background-color: blue !important;
 }
 
-.tweet-username{
-	font-weight: bold;
+.navbar-inverse a {
+    color: white !important;
 }
 
-.row{
-	margin-top: 20 px;
+.navbar-inverse a:hover {
+    color: rgb(225, 225, 225) !important;
 }
 
-.thumbnail .user-cell{
-	height: 170px;
+.tweet-avatar {
+    float: left;
+    margin-right: 15px;
+    padding-left: 10px;
 }
 
-img.useravatar{
-	height: 48px;
+.google {
+    background-color: #00b3ee;
 }
 
-.thumbnail>img.useravatar{
-	height: 48px;	
+.tweet-username {
+    font-weight: bold;
 }
 
-.user-cell-name{
-	margin-top: 20px;
+.row {
+    margin-top: 20px;
+}
+
+.thumbnail .user-cell {
+    height: 170px;
+}
+
+img.useravatar {
+    height: 48px;
+}
+
+.thumbnail > img.useravatar {
+    height: 48px;
+}
+
+.user-cell-name {
+    margin-top: 20px;
 }
 
 .hide-me {
-  visibility: hidden;
-  opacity: 0;
-  transform: scale(.75);
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(.75);
 }
 
-.followees-list{
-	min-width: 15%;
-	border:5px solid rgb(230,230,230);
-	text-align: center;
+#followees-list {
+    min-width: 15%;
+    border: 5px solid rgb(230, 230, 230);
+    text-align: center;
 }

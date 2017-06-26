@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="js\jquery-3.2.1.min.js"></script>
     <title>OfekTweeter | Users</title>
 </head>
 <body>
 <doctype html>
     <link rel="stylesheet" href="css/main.css">
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/style.css">
+    <link href="css/style.css" rel="stylesheet">
     <header>
         <div class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container">
@@ -49,151 +50,47 @@
     <div class="container" id="users-list">
         <div class="row">
             <div class="col-sm-10" id="user-cells">
-                <div class="col-sm-2 user-cell">
-                    <div class="thumbnail">
-                        <img src="images/useravatar.jpg" class="useravatar">
-                        <div class="caption text-center">
-                            <button onclick="toggleButton()" class="btn btn-primary">follow</button>
-                            <p class="user-cell-name">Marty McFly</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-2 user-cell">
-                    <div class="thumbnail">
-                        <img src="images/useravatar.jpg" class="useravatar">
-                        <div class="caption text-center">
-                            <button class="btn btn-primary">follow</button>
-                            <p class="user-cell-name">Jains Joplin</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-2 user-cell">
-                    <div class="thumbnail">
-                        <img src="images/useravatar.jpg" class="useravatar">
-                        <div class="caption text-center">
-                            <button class="btn btn-primary">follow</button>
-                            <p class="user-cell-name">Albert Einstein</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-2 user-cell">
-                    <div class="thumbnail">
-                        <img src="images/useravatar.jpg" class="useravatar">
-                        <div class="caption text-center">
-                            <button class="btn btn-primary">follow</button>
-                            <p class="user-cell-name">Genfhis Khan</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-2 user-cell">
-                    <div class="thumbnail">
-                        <img src="images/useravatar.jpg" class="useravatar">
-                        <div class="caption text-center">
-                            <button class="btn btn-primary">unfollow</button>
-                            <p class="user-cell-name">Dracula</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-2 user-cell">
-                    <div class="thumbnail">
-                        <img src="images/useravatar.jpg" class="useravatar">
-                        <div class="caption text-center">
-                            <button class="btn btn-primary">follow</button>
-                            <p class="user-cell-name">Forset Gump</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-2 user-cell">
-                    <div class="thumbnail">
-                        <img src="images/useravatar.jpg" class="useravatar">
-                        <div class="caption text-center">
-                            <button class="btn btn-primary">follow</button>
-                            <p class="user-cell-name">Cligula</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-2 user-cell">
-                    <div class="thumbnail">
-                        <img src="images/useravatar.jpg" class="useravatar">
-                        <div class="caption text-center">
-                            <button class="btn btn-primary">follow</button>
-                            <p class="user-cell-name">Winnie the Pooh</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-2 user-cell">
-                    <div class="thumbnail">
-                        <img src="images/useravatar.jpg" class="useravatar">
-                        <div class="caption text-center">
-                            <button class="btn btn-primary">follow</button>
-                            <p class="user-cell-name">Obama</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-2 user-cell">
-                    <div class="thumbnail">
-                        <img src="images/useravatar.jpg" class="useravatar">
-                        <div class="caption text-center">
-                            <button class="btn btn-primary">unfollow</button>
-                            <p class="user-cell-name">Henry th 8th</p>
-                        </div>
-                    </div>
-                </div>
+
             </div>
-            <div class="col-sm-2 followees-list">
+
+            <div class="col-sm-2" id="followees-list">
                 <h2>Followees</h2>
-                <div class="col-sm-12 followee-Cell">
-                    <div class="thumbnail">
-                        <img src="images/useravatar.jpg" class="useravatar">
-                        <div class="caption text-center">
-                            <button class="btn btn-primary">unfollow</button>
-                            <p class="user-cell-name">Dracula</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 followee-Cell">
-                    <div class="thumbnail">
-                        <img src="images/useravatar.jpg" class="useravatar">
-                        <div class="caption text-center">
-                            <button class="btn btn-primary">unfollow</button>
-                            <p class="user-cell-name">Henry the 8th</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 
     </div>
 
 </doctype>
-<script src="js\filters.js"></script>
+
 <script>
 
+    var usersMap = new Map();
 
-    var usersList = ["Marty McFly",
-        "Jains Joplin",
-        "Albert Einstein",
-        "Genfhis Khan",
-        "Dracula",
-        "Forset Gump",
-        "Cligula",
-        "Winnie the Pooh",
-        "Obama",
-        "Henry the 8th",
-        "Steven Taylor",
-        "Batman"];
+    var usersList =
+        [{user_id: 1, user_name: "Marty McFly"},
+            {user_id: 2, user_name: "Jains Joplin"},
+            {user_id: 3, user_name: "Albert Einstein"},
+            {user_id: 4, user_name: "Genghis Khan"},
+            {user_id: 5, user_name: "Dracula"},
+            {user_id: 6, user_name: "Forset Gump"},
+            {user_id: 7, user_name: "Caligula"},
+            {user_id: 8, user_name: "Winnie the Pooh"},
+            {user_id: 9, user_name: "Obama"},
+            {user_id: 10, user_name: "Henry the 8th"},
+            {user_id: 11, user_name: "Steven Taylor"},
+            {user_id: 12, user_name: "Batman"}];
 
-    var followeesList = ["Dracula",
-        "Henry the 8th"];
+    usersList.forEach(function (element) {
+        usersMap.set(element.user_id, element.user_name);
+    });
+
+    var followeesList = [5, 10];
 
     var followStateList = {"unfollow": "unfollow-state", "follow": "follow-state"};
 
-    function userCellBuilder(username, image, buttonState) {
-        var divUserCell = document.createElement("DIV");
-        divUserCell.setAttribute("class", "col-sm-2 user-cell");
+    function userThumbnailBuilder(userId, image, buttonState) {
         var divThumbnail = document.createElement("DIV");
         divThumbnail.setAttribute("class", "thumbnail");
-        divUserCell.appendChild(divThumbnail);
         var imgUserAvatar = document.createElement("IMG");
         imgUserAvatar.setAttribute("src", image);
         imgUserAvatar.setAttribute("class", "useravatar");
@@ -204,60 +101,107 @@
         var followButton = document.createElement("BUTTON");
         followButton.setAttribute("class", followStateList[buttonState]);
         followButton.innerHTML = buttonState;
+        followButton.value = userId;
         divCaptionTextCenter.appendChild(followButton);
         var paragraphUsernameCell = document.createElement("P");
-        paragraphUsernameCell.innerHTML = username;
+        paragraphUsernameCell.innerHTML = usersMap.get(userId);
+        paragraphUsernameCell.className = "user-cell-name";
         divCaptionTextCenter.appendChild(paragraphUsernameCell);
-        return divUserCell;
+        return divThumbnail;
+    }
+    function bindAllFollowButtons() {
+        console.log("bindAllFollowButtons");
+        console.log(this);
+        $(".unfollow-state,.follow-state").bind("click", bindFollowStateClickEvent($(this).html()));
+        /*$(".unfollow-state,.follow-state").bind("click", function () {
+            console.log(this);
+            let userId = parseInt(this.value);
+
+            if (this.innerHTML === "follow") {
+                this.setAttribute("class", followStateList["unfollow"]);
+                this.innerHTML = "unfollow";
+                followeesList.push(userId);
+                let followeeCell = $("<div></div>").attr("class", "col-sm-12 followee-cell");
+                followeeCell.append(userThumbnailBuilder(userId, defaultImage, "unfollow"));
+                $("#followees-list").append(followeeCell);
+            }
+            else if (this.innerHTML === "unfollow") {
+                this.setAttribute("class", followStateList["follow"]);
+                this.innerHTML = "follow";
+                followeesList.splice(followeesList.indexOf(userId), 1);
+                /!*var b = $(".followee-cell button:value(" + 5 + ")").html();*!/
+//                console.log(b);
+//                parentsUntil(".followee-cell").remove();
+                var c = $(".followee-cell:has(button[value = " + userId + "])").remove();
+                console.log(c);
+            }
+        });*/
+
     }
 
-    function followeeCellBuilder(username, image) {
-        var divUserCell = document.createElement("DIV");
-        divUserCell.setAttribute("class", "col-sm-12 followee-cell");
-        var divThumbnail = document.createElement("DIV");
-        divThumbnail.setAttribute("class", "thumbnail");
-        divUserCell.appendChild(divThumbnail);
-        var imgUserAvatar = document.createElement("IMG");
-        imgUserAvatar.setAttribute("src", image);
-        imgUserAvatar.setAttribute("class", "useravatar");
-        divThumbnail.appendChild(imgUserAvatar);
-        var divCaptionTextCenter = document.createElement("DIV");
-        divCaptionTextCenter.setAttribute("class", "caption text-center");
-        divThumbnail.appendChild(divCaptionTextCenter);
-        var followButton = document.createElement("BUTTON");
-        followButton.setAttribute("class", "ufollow-state");
-        followButton.innerHTML = "unfollow";
-        divCaptionTextCenter.appendChild(followButton);
-        var paragraphUsernameCell = document.createElement("P");
-        paragraphUsernameCell.innerHTML = username;
-        divCaptionTextCenter.appendChild(paragraphUsernameCell);
-        return divUserCell;
+    function bindFollowStateClickEvent(element) {
+        console.log("bindFollowStateClickEvent");
+        console.log(element);
+        var userId = parseInt(element.value);
+        console.log(userId);
+        if (element.innerHTML === "follow") {
+            element.setAttribute("class", followStateList["unfollow"]);
+            element.innerHTML = "unfollow";
+            followeesList.push(userId);
+            let followeeCell = $("<div></div>").attr("class", "col-sm-12 followee-cell");
+            followeeCell.append(userThumbnailBuilder(userId, defaultImage, "unfollow"));
+            $("#followees-list").append(followeeCell);
+//            followeeCell.addEventListener("click",bindFollowStateClickEvent(userId));
+        }
+        else if (element.innerHTML === "unfollow") {
+            element.setAttribute("class", followStateList["follow"]);
+            element.innerHTML = "follow";
+            followeesList.splice(followeesList.indexOf(userId), 1);
+            /*var b = $(".followee-cell button:value(" + 5 + ")").html();*/
+//                console.log(b);
+//                parentsUntil(".followee-cell").remove();
+            var c = $(".followee-cell:has(button[value = " + userId + "])").remove();
+            console.log(c);
+        }
     }
+
+    var defaultImage = "images/useravatar.jpg";
 
     function loadUsersList() {
-        var userCells = document.getElementById("user-cells");
-        var followersCells = document.getElementsByClassName("followees-list");
-        usersList.forEach(function (user) {
-            if (followeesList.includes(user)) {
-                var userCell = userCellBuilder(user, "images/useravatar.jpg", "unfollow");
-                var followeeCell = followeeCellBuilder(user, "images/useravatar.jpg");
-                userCells.appendChild(userCell);
-                followersCells.appendChild(followeeCell);
+        let userCell;
+        let userCells = document.getElementById("user-cells");
+        let followersCells = document.getElementById("followees-list");
+        for (let userId of usersMap.keys()) {
+            let divUserCell = document.createElement("DIV");
+            divUserCell.setAttribute("class", "col-sm-2 user-cell");
+            if (followeesList.includes(userId)) {
+                let divFolloweeCell = document.createElement("DIV");
+                divFolloweeCell.setAttribute("class", "col-sm-12 followee-cell");
+                userCell = userThumbnailBuilder(userId, defaultImage, "unfollow");
+                let followeeCell = userThumbnailBuilder(userId, defaultImage, "unfollow");
+                followersCells.appendChild(divFolloweeCell);
+                divFolloweeCell.appendChild(followeeCell);
             }
-            else
-                userCell = userCellBuilder(user, "images/useravatar.jpg", followStateList["follow"]);
-        });
+            else {
+                userCell = userThumbnailBuilder(userId, defaultImage, "follow");
+            }
+            userCells.appendChild(divUserCell);
+            divUserCell.appendChild(userCell);
+        }
+        bindAllFollowButtons();
     }
-
 
     loadUsersList();
 
     /*console.log(usersList);*/
 
     /*usersList.forEach(function (element) {
-        if (followeesList.includes(element))
-            console.log(element);
-    });*/
+     if (followeesList.includes(element))
+     console.log(element);
+     });*/
 </script>
+
+<script src="js\filters.js"></script>
+
 </body>
 </html>
